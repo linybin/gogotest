@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h1= title
+
+    ul
+    each customer in data
+        li
+
+            h1 Name |#{customer.name}
+            p Preference
+                p species: #{customer.preference.species}
+                p breed: #{customer.preference.breed}
+                p age -minimum: #{customer.preference.age.minimum}
+                p age -maximum: #{customer.preference.age.maximum}
+
+            p(style=" color: red") Matched pets
+                p #{customer.matchedPets}
+
