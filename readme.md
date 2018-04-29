@@ -16,14 +16,18 @@ Install dependencies
 npm install 
 ```
 
+Open [localhost:3000](http://localhost:3000/) 
 ## Running the tests
 ```
 npm test 
 ```
 
 
-## Deployment
-to do 
+## Docker
+```
+docker build -t <your username>/node-web-app .
+docker run -p <your port>:3000 -d <your username>/node-web-app
+```
 
 ## Versioning
 
@@ -41,4 +45,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 1. RDBMS would be much easilier for this application 
-2. extension 1, 
+2. For ease of implementation, db credentials are hardcoded 
+

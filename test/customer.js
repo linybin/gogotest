@@ -11,7 +11,7 @@ const Preference = require('../models/customerpreference');
 const Pet = require('../models/pet');
 const app = require('../app');
 
-mongoose.set('debug', true);
+// mongoose.set('debug', true);
 chai.use(chaiHttp);
 
 
